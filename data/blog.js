@@ -6,6 +6,7 @@ export const BLOG = [
     description:
       'A continuación te ofrezco un tutorial para aprender a hacer un paginador infinito que sea moderno, eficiente y flexible ante cualquier navegador o dispositivo.Te encuentras en una continuación del artículo...',
     duration: '6 minutos',
+    image: '../public/blog/javascript.jpg',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const BLOG = [
     description:
       'Para mejorar la lectura del código, voy a enseñarte unas sencillas reglas para mejorar la legibilidad de tus documentos HTML. No son difíciles de aplicar y mejorarán enormemente el mantenimiento...',
     duration: '2 minutos',
+    image: '../public/blog/formatear-html.jpg',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const BLOG = [
     description:
       'Chrome continúa aumentando su uso, siendo actualmente el navegador más popular (casi por defecto) de la mayoría, debido por a su marketing, integración en ChromeBooks y Androids. Por otro lado...',
     duration: '5 minutos',
+    image: '../public/blog/navegadores.jpg',
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const BLOG = [
     description:
       'Cuando intentamos poner en prácticas ciertas prácticas funcionales como la inmutabilidad en JavaScript se nos hace complejo por el propio diseño del lenguaje. No obstante podemos navegar por rutas alternativas...',
     duration: '2 minutos',
+    image: '../public/blog/javascript.jpg',
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const BLOG = [
     description:
       'El amor hacia el texto plano es natural e inevitable entre los técnicos de redes, administradores de sistemas o desarrolladores de software. Es la base de cualquier configuración mínima o...',
     duration: '3 minutos',
+    image: '../public/blog/texto-plano.jpg',
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const BLOG = [
     description:
       'Cuando queremos centrar la atención de un visitante en un lugar determinado, como puede ser un modal o un popup, disponemos de varias técnicas. Una de las más populares es...',
     duration: '4 minutos',
+    image: '../public/blog/focalizar.jpg',
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const BLOG = [
     description:
       'Con la siguiente función en JavaScript podrás eliminar todos los acentos de un texto o string./** * Devuelve un texto sin acentos * @param {string} text - Texto con acentos....',
     duration: '2 minutos',
+    image: '../public/blog/javascript.jpg',
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const BLOG = [
     description:
       'A continuación puedes ver un minimalista y sencillo metrónomo en JavaScript plano (Vainilla) adaptado a smartphone o escritorio. Con la ayuda de la etiqueta &amp;lt;audio&amp;gt; verás que es posible reproducir...',
     duration: '8 minutos',
+    image: '../public/blog/metronomo.jpg',
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const BLOG = [
     description:
       'A continuación vamos a aprender a fijar un elemento en el scroll de forma temporal mientras se hace scroll hasta que encuentre otro elemento que choque.Para lograrlo haremos uso de...',
     duration: '5 minutos',
+    image: '../public/blog/fijar-elemento.jpg',
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const BLOG = [
     description:
       'En el siguiente tutorial, o código de ejemplo, podéis trabajar con un completo menú Responsive Design que se adapta tanto a escritorio como smartphone. Trabaja de diferente forma dependiendo del...',
     duration: '4 minutos',
+    image: '../public/blog/responsive.jpg',
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const BLOG = [
     description:
       'Para modificar la anchura de cualquier elemento en con cursor del ratón, o por medio de un dedo y una pantalla touch, disponemos de una opción en CSS y otra...',
     duration: '3 minutos',
+    image: '../public/blog/cambiar-anchura.jpg',
   },
   {
     id: 12,
@@ -94,5 +105,6 @@ export const BLOG = [
     description:
       'Con la nueva versión estable de Debian toca actualizar de Debian 10 (buster) a Debian 11 (bullseye) para disponer de las últimas versiones del software o actualizaciones de seguridad. Por...',
     duration: '6 minutos',
+    image: '../public/blog/debian.jpg',
   },
 ];
