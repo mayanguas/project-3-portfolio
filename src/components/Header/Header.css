@@ -1,0 +1,213 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 1;
+}
+
+/* ------- NAVEGATION BAR ------- */
+
+.navbar {
+  width: 100%;
+}
+
+.main-nav {
+  display: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  background-color: var(--primary-color);
+}
+
+.main-nav a {
+  color: var(--primary-bg-color);
+}
+
+.main-nav a:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.main-nav li {
+  text-align: center;
+  padding-bottom: 0.1rem;
+}
+
+.separator {
+  display: inline-block;
+  background-color: beige;
+  height: 0.05rem;
+  width: 50%;
+  /* Con esto controlo la posición */
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem 1rem 0 1rem;
+  margin-bottom: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 22px;
+  right: 10%;
+  cursor: pointer;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* --- BUTTON SWITCH THEME LIGHT/DARK --- */
+
+/* Controla la posición del switcher */
+.switch-container {
+  padding: 1.6rem 0 0 38%;
+}
+
+/* --- Themes Light and Dark --- */
+.light-body {
+  background-color: rgb(222, 209, 222);
+  color: rgb(33, 3, 9);
+}
+
+.dark-body {
+  background-color: rgb(3, 18, 34);
+  color: rgb(226, 213, 213);
+}
+/* ----------------------------- */
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 26px;
+}
+
+.switch-container {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.icon-switch-sun,
+.icon-switch-moon {
+  width: 20px;
+}
+
+/* Esto hace que el input no sea visible */
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(86, 86, 187);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Slider interior */
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 18px;
+  width: 18px;
+  left: 5px;
+  bottom: 4px;
+  background-color: gold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Color de fondo cuando el input está chekeado */
+input:checked + .slider {
+  background-color: green;
+}
+
+/* input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-fuente);
+} */
+
+/* Controlo la traslación en X del botón */
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Forma del input */
+.slider.round {
+  border-radius: 40px;
+}
+
+/* Forma del slider interior */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* =================================================
+                   MEDIA QUERIES
+ ================================================= */
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+  /*  Barra de navegación */
+  .menu-container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* Theme switcher */
+  .switch-container {
+    padding: 0;
+  }
+}

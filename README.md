@@ -10,15 +10,13 @@ En este proyecto te vamos a pedir que apliques todo lo aprendido hasta ahora, in
 
 En este proyecto comenzarás creando una barra de navegación donde prefieras (arriba o a la izquierda de la pantalla), donde tendrás al menos **tres links `a` diferentes**. A estos links les añadirás un evento mediante JavaScript de forma que cuando ocurra el evento `click` se lance esta función:
 
-```
+```js
 // Lee los comentarios de este código para entender lo que hace 🔴
 document.querySelector('...').addEventListener('click', (ev) => {
-	ev.preventDefault(); // Esto hace que el link no cargue la URL a la que apunta
-  const linkHref = ev.target.href; // Almacenamos la URL en una constante
-  console.log('El link apunta a:', linkHref ); // La mostramos en consola
-
-  // Añade aquí tu lógica! 🔽
-})
+ev.preventDefault(); // Esto hace que el link no cargue la URL a la que apunta
+const linkHref = ev.target.href; // Almacenamos la URL en una constante
+console.log('El link apunta a:', linkHref); // La mostramos en consola // Añade
+aquí tu lógica! 🔽 });
 ```
 
 Tendrás este evento añadido a los elementos de tipo a los cuales tendrán tres propiedades HREF distintas, tres textos distintos, e invocarán al final de su evento a una función distinta para cada vista de la aplicación:
@@ -50,3 +48,48 @@ Para verificar que tu proyecto cumple unos requisitos adecuados al conocimiento 
 **Criterios Generales**
 
 - [ ] La web se ha publicado en Netlify siguiendo los pasos explicados en clase y demostrado en los videos de referencia para depsliegue con Vite y Netlify.
+
+---
+
+header {
+height: 15vh;
+}
+
+footer {
+height: 10vh;
+}
+
+---
+
+```css
+body {
+  background-color: var(--bg-color-dark);
+  color: var(--primary-color-dark);
+  padding: 0.5rem 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  color: orange;
+}
+
+main {
+  min-height: calc((100vh - 10vh - 8vh) - 1rem);
+  display: flex;
+  align-items: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+```
