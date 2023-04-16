@@ -1,13 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Handlee&family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --primary-color: #2b84df;
   --secondary-color: #dfaa60;
   --third-color: #f4ece6;
+  --anchors-color: #e4e6ef;
 
+  /* Theme colors */
   --primary-bg-color: white;
   --secondary-bg-color: #23233c;
+  --theme-primary-color: #ececf3;
+  --theme-secondary-color: #050321;
 
-  --color-fuente: #1e0202;
-  --color-fondo: #dddeea;
+  /* Fonts */
+  --primary-font: 'Fira Sans', sans-serif;
+  --secondary-font: 'Inter', sans-serif;
+  --third-font: 'Handlee', cursive;
+
+  /* Gradient */
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 135, 0, 1) 0%,
+    rgba(9, 9, 121, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 * {
@@ -25,4 +41,20 @@ main {
 body {
   background-color: var(--color-fondo);
   color: var(--color-fuente);
+  transition: all 0.5s ease-in-out;
+}
+
+main > * {
+  animation: fade 1s ease-in-out;
+}
+
+/* ---- Keyframes ---- */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

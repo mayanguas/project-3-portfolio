@@ -1,0 +1,74 @@
+/* --- Carta base --- */
+.project-card {
+  width: 260px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(151, 150, 150);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+/* Contenido carta */
+.project-card-content {
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+}
+
+.project-card-content h4 {
+  font-size: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-links img {
+  width: 25px;
+}
+
+.project-links a {
+  color: var(--anchors-color);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.project-links a:hover {
+  color: orange;
+}
+
+span {
+  font-weight: bolder;
+}
+
+/* =================================================
+                   MEDIA QUERIES
+ ================================================= */
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .project-card {
+    width: 320px;
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    width: 380px;
+    height: 520px;
+  }
+}

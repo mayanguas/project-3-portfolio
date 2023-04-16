@@ -18,11 +18,9 @@ const Template = () => `
 
     <input type="checkbox" id="chkToggle" />
     <ul class="main-nav" id="menu">
-      <li><a href="#" class="nav-links">Inicio</a></li>
-      <li><div class="separator"></div></li>
-      <li><a href="#" class="nav-links">Portfolio</a></li>
-      <li><div class="separator"></div></li>
-      <li><a href="#" class="nav-links">Blog</a></li>
+      <li><a href="#" class="nav-links" id="homeLink">Inicio</a></li>
+      <li><a href="#" class="nav-links" id="projectsLink">Projects</a></li>
+      <li><a href="#" class="nav-links" id="blogLink">Blog</a></li>
     </ul>
 
   </div>
@@ -33,5 +31,3 @@ const Template = () => `
 export const printTemplate = () => {
   document.querySelector('header').innerHTML = Template();
 };
-
-// -----------------------------------------------------//

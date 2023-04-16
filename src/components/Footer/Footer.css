@@ -2,7 +2,11 @@ footer {
   height: 8vh;
   background-color: var(--primary-color);
   color: var(--primary-bg-color);
+  font-family: var(--secondary-font);
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
   display: flex;
-  align-items: end;
-  padding: 0 0 0.8rem 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

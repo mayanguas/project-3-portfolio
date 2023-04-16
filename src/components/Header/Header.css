@@ -1,5 +1,5 @@
 header {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   background-color: var(--primary-color);
   position: absolute;
@@ -16,8 +16,9 @@ header {
   display: none;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: var(--primary-color);
+  font-family: var(--primary-font);
 }
 
 .main-nav a {
@@ -83,13 +84,13 @@ header {
 
 /* --- Themes Light and Dark --- */
 .light-body {
-  background-color: rgb(222, 209, 222);
-  color: rgb(33, 3, 9);
+  background-color: var(--theme-primary-color);
+  color: var(--theme-secondary-color);
 }
 
 .dark-body {
-  background-color: rgb(3, 18, 34);
-  color: rgb(226, 213, 213);
+  background-color: var(--theme-secondary-color);
+  color: var(--theme-primary-color);
 }
 /* ----------------------------- */
 
@@ -124,7 +125,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(86, 86, 187);
+  background-color: rgb(225, 189, 12);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -135,16 +136,16 @@ header {
   content: '';
   height: 18px;
   width: 18px;
-  left: 5px;
+  left: 4px;
   bottom: 4px;
-  background-color: gold;
+  background-color: rgb(17, 104, 203);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 /* Color de fondo cuando el input está chekeado */
 input:checked + .slider {
-  background-color: green;
+  background-color: rgb(39, 37, 3);
 }
 
 /* input:focus + .slider {

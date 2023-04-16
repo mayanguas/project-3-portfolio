@@ -3,23 +3,49 @@
 }
 
 .container-home {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 /* ------- PRESENTATION ------- */
-h1 {
-  font-size: 1rem;
-}
-
 .presentation {
-  width: 300px;
+  width: 250px;
   height: 450px;
   background-color: var(--third-color);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  font-family: var(--primary-font);
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
+  border-radius: 0.3rem;
+}
+
+.presentation h1 {
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+.job {
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.name {
+  font-family: var(--primary-font);
+  color: #060422;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .presentation-footer {
@@ -42,7 +68,116 @@ h1 {
 
 /* ------- TEXT PRESENTATION ------- */
 .text-presentation {
-  width: 200px;
-  height: 400px;
-  background-color: deeppink;
+  width: 250px;
+  height: 500px;
+  margin-bottom: 3rem;
+}
+
+.text-presentation h2 {
+  font-family: var(--primary-font);
+  font-size: 4rem;
+}
+
+/* Estos son los {} */
+.code {
+  font-size: 5rem;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.text-presentation p {
+  font-family: var(--primary-font);
+}
+
+.creative {
+  font-family: var(--third-font);
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.span-creative {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+}
+
+.introduction {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.description {
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  /* margin-top: 1rem; */
+}
+
+.second-parag {
+  margin-top: 1rem;
+}
+
+/* =================================================
+                   MEDIA QUERIES
+ ================================================= */
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  /* Presentación */
+  .presentation {
+    width: 300px;
+  }
+
+  /* HELLO Presentación */
+  .text-presentation {
+    width: 360px;
+  }
+
+  .text-presentation h2 {
+    font-family: var(--primary-font);
+    font-size: 4rem;
+  }
+
+  .code {
+    font-size: 5rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+
+  .introduction {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .presentation {
+    width: 300px;
+  }
+
+  .text-presentation {
+    width: 400px;
+  }
+
+  .text-presentation h2 {
+    font-size: 5rem;
+  }
+
+  .code {
+    font-size: 7rem;
+    font-weight: 600;
+  }
+
+  .introduction {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }
