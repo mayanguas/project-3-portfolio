@@ -1,7 +1,7 @@
 import './Footer.css';
 
 const Template = () => `
-  <h4>Created as a project for Rock{theCode}</h4>
+  <h4>Creado como proyecto para Rock{theCode}</h4>
 `;
 
 export const printTemplate = () => {

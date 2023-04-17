@@ -1,0 +1,58 @@
+.margin-hobbys {
+  width: 100%;
+  height: 7rem;
+}
+
+.hobbys-container {
+  padding: 0 1.2rem;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.images img {
+  width: 100%;
+  filter: sepia(90%);
+  transition: all 0.5s ease-in-out;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  filter: sepia(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+/* =================================================
+                   MEDIA QUERIES
+ ================================================= */
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .margin-hobbys {
+    height: 9rem;
+  }
+
+  .images img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .margin-hobbys {
+    height: 10rem;
+  }
+
+  .images {
+    gap: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .images img {
+    width: 650px;
+  }
+}

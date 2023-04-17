@@ -5,6 +5,7 @@ import { printTemplate as Header } from './src/components/Header/Header';
 import { printTemplate as Home } from './src/pages/Home/Home';
 import { printTemplate as Projects } from './src/pages/Projects/Projects';
 import { printTemplate as Blog } from './src/pages/Blog/Blog';
+import { printTemplate as Hobbys } from './src/pages/Hobbys/Hobbys';
 import { printTemplate as Footer } from './src/components/Footer/Footer';
 
 import { linkPage } from './src/utils/linkpage';
@@ -18,6 +19,7 @@ Footer();
 linkPage('#homeLink', Home);
 linkPage('#projectsLink', Projects);
 linkPage('#blogLink', Blog);
+linkPage('#hobbysLink', Hobbys);
 
 // ---------- Theme Swithcher ----------------- //
 const colorSwitch = document.querySelector('#switch');

@@ -10,8 +10,8 @@ const Template = () => `
       <p class="name">Alejandro Yanguas</p>
       <p class="job">FULL STACK DEVELOPER</p>
       <div class="presentation-footer">
-        <img src="/icons/github.svg" alt="GitHub icon">
-        <img src="/icons/email-sobre.svg" alt="Email icon">
+        <a href="https://github.com/mayanguas"><img src="/icons/github.svg" alt="GitHub icon"></a>
+        <a href="mailto:alejandro_yanguas@yahoo.es"><img src="/icons/email-sobre.svg" alt="Email icon"></a>
       </div>
     </div>
 

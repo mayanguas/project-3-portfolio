@@ -8,19 +8,20 @@ const Template = () => `
     </label>
 
     <div class="switch-container">
-      <img class="icon-switch-sun" src="./public/icons/sun-solid.svg" alt="Icon of a sun">
+      <img class="icon-switch-sun" src="/icons/sun-solid.svg" alt="Icon of a sun">
       <label id="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
-      <img class="icon-switch-moon" src="./public/icons/moon-stars.svg" alt="Icon of a moon">
+      <img class="icon-switch-moon" src="/icons/moon-stars.svg" alt="Icon of a moon">
     </div>
 
     <input type="checkbox" id="chkToggle" />
     <ul class="main-nav" id="menu">
       <li><a href="#" class="nav-links" id="homeLink">Inicio</a></li>
-      <li><a href="#" class="nav-links" id="projectsLink">Projects</a></li>
+      <li><a href="#" class="nav-links" id="projectsLink">Proyectos</a></li>
       <li><a href="#" class="nav-links" id="blogLink">Blog</a></li>
+      <li><a href="#" class="nav-links" id="hobbysLink">Hobbys</a></li>
     </ul>
 
   </div>

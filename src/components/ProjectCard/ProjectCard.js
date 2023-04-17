@@ -11,10 +11,10 @@ export const ProjectCard = (project) => {
         <div class="project-links">
           <a href=${
             project.link
-          }><img src="/icons/netlify.png" alt="Netlify icon"/> Ver Web</a>
+          } target="_blank"><img src="/icons/netlify.png" alt="Netlify icon"/> Ver Web</a>
           <a href=${
             project.github
-          }><img src="/icons/github-white.svg" alt="GitHub icon"/> Ver Código</a>
+          } target="_blank"><img src="/icons/github-white.svg" alt="GitHub icon"/> Ver Código</a>
         </div>
       </div>
     </article>
